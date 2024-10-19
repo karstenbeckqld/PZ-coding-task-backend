@@ -11,23 +11,35 @@ public class ImageManager : IImageRepository<IFormFile>
         // Define where to store images, e.g., "public/images"
         _imagePath = Path.Combine(Directory.GetCurrentDirectory(), "public/images");
     }
-
-
+    
     public async Task<string> SaveImage(IFormFile image)
     {
+        if (image.Length > 1024 * 1024 * 5) // 5MB limit
+        {
+            return ("Image too large");
+        }
+        
         if (image is null || image.Length <= 0)
             return ("No image data provided."); // Handle null or empty image files
 
-        // Set the image file path, e.g., "public/images/imageName.jpg"
-        var imageFilePath = Path.Combine(_imagePath, image.FileName);
-
-        // Save the file asynchronously
-        await using (var stream = new FileStream(imageFilePath, FileMode.Create))
+        var extension = Path.GetExtension(image.FileName);
+        
+        if (!new[] { ".jpg", ".jpeg", ".png" }.Contains(extension))
+        {
+            return ("Invalid file type");
+        }
+        
+        if (!Directory.Exists(_imagePath))
+        {
+            Directory.CreateDirectory(_imagePath);
+        }
+        
+        var filePath = Path.Combine(_imagePath, image.FileName);
+        await using (var stream = new FileStream(filePath, FileMode.Create))
         {
             await image.CopyToAsync(stream);
         }
-
-        // Return the image file name.
-        return image.FileName;
+        
+        return ("File uploaded successfully");
     }
 }

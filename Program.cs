@@ -6,15 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.Configure<CheeseriaDatabaseSettings>(
     builder.Configuration.GetSection("CheeseDatabase"));
-
-// Register the repository and service
-//builder.Services.AddSingleton<ICheeseRepository<Cheese, string>, CheeseRepository>();
-
-//builder.Services.AddSingleton<CheeseriaService>();
+builder.Services.AddScoped<ImageManager>();
 builder.Services.AddSingleton<CheeseManager>();
-// Add services to the container
-//builder.Services.AddScoped<IImageRepository<IFormFile>, ImageManager>();
-
 builder.Services.AddControllers()
     .AddJsonOptions(
         options => options.JsonSerializerOptions.PropertyNamingPolicy = null);

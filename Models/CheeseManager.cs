@@ -3,6 +3,8 @@ using MongoDB.Driver;
 
 namespace cheeseBackend.Models;
 
+// The CheeseManager implements the ICheseRepository interface and its methods. It then gets injected into the
+// CheeseController. 
 public class CheeseManager: ICheeseRepository<Cheese, string>
 {
     private readonly IMongoCollection<Cheese> _cheeseCollection;

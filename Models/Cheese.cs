@@ -4,6 +4,8 @@ using System.Text.Json.Serialization;
 
 namespace cheeseBackend.Models;
 
+// The Cheese model describes the cheese object as stored in the database. The Id gets set by the database and is a
+// string as we're using MongoDB.
 public class Cheese
 {
     [BsonId]
