@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "6712749bcda4340a352f534b"
+  },
+  "Name": "Edam",
+  "Image": "edam.jpg",
+  "Colour": "Red",
+  "Price": 23.69,
+  "Description": "Edam cheese is a delicious and versatile semi-hard cheese that originates from the Netherlands. Named after the town of Edam in North Holland – where it has been a staple since the 15th century –  its distinctive shape and red wax coating make it one of the most easily identifiable cheeses in the world. The cheese is made using pasteurized cow's milk and is coveted for its mild, nutty flavor and smooth, firm texture that becomes crumblier as it ages.",
+  "Tags": [
+    "Made from pasteurized cow's milk",
+    "Country of origin: Netherlands",
+    "Family: Medium Hard Cheese",
+    "Type: semi-hard",
+    "Texture: crumbly and firm",
+    "Colour: pale yellow",
+    "Flavour: mild, nutty",
+    "Aroma: mild",
+    "Synonyms: Edammer"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6712749bcda4340a352f534c"
+  },
+  "Name": "Gruyere",
+  "Image": "gruillere.jpg",
+  "Colour": "Yellow",
+  "Price": {
+    "$numberDecimal": "26.99"
+  },
+  "Tags": [
+    "Made from cow's milk",
+    "Country of origin: Switzerland",
+    "Family: hard cheese",
+    "Type: Hard",
+    "Texture: compact",
+    "Colour: yellow",
+    "Flavour: sweet",
+    "Aroma: sweet and slightly salty",
+    "Synonyms: Gruyère in Fribourg"
+  ],
+  "Description": "Cherished for its creamy texture and nutty flavour, it’s known for its culinary excellence, as Gruyère is ideal for baking. Due to its melting properties, it is commonly used in fondues and French onion soup. It is also often grated over salads and pasta. The cheese pairs well with white wines like Riesling. The term \"gruyere\" can label cheeses outside the Gruyère regions of Switzerland and France. This applies globally, including the US, Netherlands, Germany, and Austria, though the FDA mandates \"small holes\" and a minimum 90-day aging period for cheeses labeled as \"Gruyere\"."
+},
+{
+  "_id": {
+    "$oid": "67128f82ec4f65bd713250ac"
+  },
+  "Name": "Camembert",
+  "Image": "camembert.jpg",
+  "Colour": "White",
+  "Price": {
+    "$numberDecimal": "38.99"
+  },
+  "Tags": [
+    "Made from cow's milk",
+    "Country of origin: France",
+    "Family: Camembert",
+    "Type: soft, artisan",
+    "Texture: smooth and soft-ripened",
+    "Colour: pale yellow",
+    "Flavour: sweet",
+    "Aroma: buttery, rich",
+    "Synonyms: Camembert Le Châtelain"
+  ],
+  "Description": "Marie Harel created the original Camembert cheese from raw cow's milk in Normandy, France, in 1791. Presently, only a handful of producers adhere to Harel's traditional process of making cheese from raw milk. Those following Marie Harel's method can legally label their product as Camembert de Normandie, under AOC guidelines. The Camembert de Normandie attained AOC status in 1983 and PDO in 1992, emphasizing a curd-preserving production method, manual drainage, and a minimum maturation period of three weeks."
+},
+{
+  "_id": {
+    "$oid": "6713e4384c5f28649bbe6e9f"
+  },
+  "Name": "Brie",
+  "Image": "brie.jpg",
+  "Colour": "Light Yellow",
+  "Price": {
+    "$numberDecimal": "45.69"
+  },
+  "Tags": [
+    "Made from cow's milk",
+    "Country of origin: France",
+    "Family: Brie",
+    "Type: soft, artisan",
+    "Texture: buttery and soft-ripened",
+    "Rind: bloomy",
+    "Colour: cream",
+    "Aroma: buttery, mild"
+  ],
+  "Description": "Brie is a soft and creamy cheese known for its mild, buttery flavor. It is traditionally made from cow's milk and aged as large wheels or rounds. Characterized by its pale yellow interior, its soft, creamy texture under the rind compliments its firmer consistency in the center. "
+},
+{
+  "_id": {
+    "$oid": "6713e5d84c5f28649bbe6ea0"
+  },
+  "Name": "Goat on a Hot Tin Roof",
+  "Image": "goat.jpg",
+  "Colour": "White",
+  "Price": {
+    "$numberDecimal": "35.29"
+  },
+  "Tags": [
+    "Made from pasteurized goat's milk",
+    "Country of origin: Australia",
+    "Type: fresh firm, artisan",
+    "Texture: creamy and soft",
+    "Rind: rindless",
+    "Flavour: herbaceous, spicy",
+    "Aroma: fresh, spicy",
+    "Producers: Woodside Cheese Wrights"
+  ],
+  "Description": "This quirkily named cheese from Woodside, Australia is made using milk specially sourced from Towerview and Oskjberg goat dairies. It is infused with locally grown combination of chilli, saltbush, and native pepperberry and crushed tanami apples. Serve Goat on a Hot Tin Roof with warm crusty bread and a drizzle of olive oil."
+},
+{
+  "_id": {
+    "$oid": "6713e6e74c5f28649bbe6ea1"
+  },
+  "Name": "Cottage Cheese",
+  "Image": "cottage.jpg",
+  "Colour": "White",
+  "Price": {
+    "$numberDecimal": "29.99"
+  },
+  "Tags": [
+    "Made from pasteurized or unpasteurized cow's milk",
+    "Country of origin: Australia",
+    "Family: Cottage",
+    "Type: fresh soft",
+    "Texture: crumbly, firm and grainy",
+    "Rind: rindless",
+    "Flavour: mild, sweet",
+    "Aroma: lactic, milky"
+  ],
+  "Description": "Cottage Cheese, sometimes known as Baker’s Cheese, is of European origin but is a popular ingredient in Australian cuisine. Fresh, unripened cheese is mostly made from cow’s milk. Sweet and mild in flavour, Cottage cheese with its high moisture content, is a mass of soft, lumpy pea-sized curds. "
+}]
